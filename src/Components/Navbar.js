@@ -5,7 +5,7 @@ const Navbar = () => {
     const menuItems = <>
         <li className='font-medium'><Link to='/'>To Do list</Link></li>
         <li className='font-medium'><Link to='/complete'>Complete</Link></li>
-        <li className='font-semibold'><Link to='/calendar'>Calender</Link></li>
+        <li className='font-semibold'><Link to='/calender'>Calender</Link></li>
     </>
     return (
         <div class="navbar bg-violet-900 text-primary-content">
