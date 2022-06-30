@@ -17,7 +17,7 @@ const TaskModal = ({ date, setTask }) => {
             },
             body: JSON.stringify(job)
         })
-            .then(res => res.json)
+            .then(res => res.json())
             .then(data => {
                 console.log(data);
             })
