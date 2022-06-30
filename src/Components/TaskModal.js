@@ -10,7 +10,7 @@ const TaskModal = ({ date, setTask }) => {
         const description = event.target.description.value;
         const job = { title, date, time, description };
         console.log(job)
-        fetch('http://localhost:5000/task', {
+        fetch('https://serene-brook-43229.herokuapp.com/task', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

@@ -12,7 +12,7 @@ const EditModal = ({ date, setTask, todo }) => {
         const description = event.target.description.value;
         const job = { title, date, description };
         console.log(job);
-        fetch(`http://localhost:5000/task/${_id}`, {
+        fetch(`https://serene-brook-43229.herokuapp.com/task/${_id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

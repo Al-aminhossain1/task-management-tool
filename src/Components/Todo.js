@@ -4,7 +4,7 @@ import SingleTodo from './SingleTodo';
 const Todo = () => {
     const [todos, setTodos] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/task')
+        fetch('https://serene-brook-43229.herokuapp.com/task')
             .then(res => res.json())
             .then(data => setTodos(data))
     }, [])
