@@ -8,7 +8,19 @@ const TaskModal = ({ date, setTask }) => {
         const date = event.target.date.value;
         const time = event.target.time.value;
         const description = event.target.description.value;
-        console.log(title, date, time, description)
+        const job = { title, date, time, description };
+        console.log(job)
+        fetch('http://localhost:5000/task', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(job)
+        })
+            .then(res => res.json)
+            .then(data => {
+                console.log(data);
+            })
         setTask(null);
     }
     return (
