@@ -7,6 +7,7 @@ import TaskModal from './TaskModal';
 const Calender = () => {
     const [date, setDate] = useState(new Date());
     const [task, setTask] = useState(null);
+    console.log(date);
     return (
         <div>
             <div className='text-center flex justify-center'>

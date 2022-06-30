@@ -7,6 +7,7 @@ import {
 import Home from './Components/Home';
 import Complete from './Components/Complete';
 import Calender from './Components/Calender';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -18,8 +19,7 @@ function App() {
         <Route path='/complete' element={<Complete></Complete>}></Route>
         <Route path='/calender' element={<Calender></Calender>}></Route>
       </Routes>
-
-
+      <Footer></Footer>
     </div>
   );
 }

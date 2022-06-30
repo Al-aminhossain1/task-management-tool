@@ -14,7 +14,10 @@ const Todo = () => {
             <p className='text-center text-3xl font-bold'>Total To Do List:{todos.length}</p>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
                 {
-                    todos.map(todo => <SingleTodo todo={todo}></SingleTodo>)
+                    todos.map(todo => <SingleTodo
+                        key={todo._id}
+                        todo={todo}
+                    ></SingleTodo>)
                 }
             </div>
         </div>
