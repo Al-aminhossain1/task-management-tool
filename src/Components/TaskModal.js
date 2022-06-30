@@ -13,21 +13,21 @@ const TaskModal = ({ date, setTask }) => {
     }
     return (
         <div className='lg:px-20'>
-            <input type="checkbox" id="task-modal" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <label for="task-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <input type="checkbox" id="task-modal" className="modal-toggle" />
+            <div className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <label htmlFor="task-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <form onSubmit={addNewTask} >
-                        <input type="text" name='title' placeholder="Title" class="input input-bordered w-full max-w-xs font-medium text-xl my-2" required />
-                        <input type="text" name='date' disabled value={format(date, "PP")} class="input input-bordered w-full max-w-xs my-2" />
-                        <input type="text" name='time' placeholder="Time" class="input input-bordered w-full max-w-xs my-2" />
-                        <textarea name='description' class="textarea textarea-bordered w-full max-w-xs text-lg" placeholder="description"></textarea>
+                        <input type="text" name='title' placeholder="Title" className="input input-bordered w-full max-w-xs font-medium text-xl my-2" required />
+                        <input type="text" name='date' disabled value={format(date, "PP")} className="input input-bordered w-full max-w-xs my-2" />
+                        <input type="text" name='time' placeholder="Time" className="input input-bordered w-full max-w-xs my-2" />
+                        <textarea name='description' className="textarea textarea-bordered w-full max-w-xs text-lg" placeholder="description"></textarea>
                         <input type="submit" className='btn btn-primary w-full max-w-xs' value="save" /> <br />
-                        {/* <label for="task-modal" class="btn btn-success btn-sm">save</label> */}
+                        {/* <label htmlFor="task-modal" className="btn btn-success btn-sm">save</label> */}
                     </form>
 
-                    {/* <div class="modal-action">
-                        <label for="task-modal" onClick={addNewTask} class="btn btn-success btn-sm">save</label>
+                    {/* <div className="modal-action">
+                        <label htmlFor="task-modal" onClick={addNewTask} className="btn btn-success btn-sm">save</label>
                     </div> */}
                 </div>
             </div>

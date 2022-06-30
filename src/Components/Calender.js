@@ -17,8 +17,8 @@ const Calender = () => {
             </div>
             <div className='text-center mt-14'>
                 <p>Selected date:{format(date, "PP")}</p>
-                {/* <button class="btn btn-sm">Create Task</button> */}
-                <label for="task-modal" onClick={setTask} class="btn btn-sm">Create Task</label>
+                {/* <button className="btn btn-sm">Create Task</button> */}
+                <label htmlFor="task-modal" onClick={setTask} className="btn btn-sm">Create Task</label>
                 {task && <TaskModal
                     setTask={setTask}
                     date={date}></TaskModal>}
