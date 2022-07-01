@@ -26,8 +26,9 @@ const EditModal = ({ date, setTask, todo }) => {
         setTask(null);
     }
     return (
-        <div>
-            <div className='lg:px-20'>
+
+        <div className='flex justify-center'>
+            <div className='lg:px-20 '>
                 <input type="checkbox" id="edit-modal" className="modal-toggle" />
                 <div className="modal modal-bottom sm:modal-middle">
                     <div className="modal-box">
@@ -37,7 +38,7 @@ const EditModal = ({ date, setTask, todo }) => {
                             <input type="text" name='date' defaultValue={date} className="input input-bordered w-full max-w-xs my-2" />
                             <input type="text" name='time' defaultValue={time} className="input input-bordered w-full max-w-xs my-2" />
                             <textarea name='description' className="textarea textarea-bordered w-full max-w-xs text-lg" defaultValue={description}></textarea>
-                            <input type="submit" className='btn btn-primary w-full max-w-xs' value="save" /> <br />
+                            <input type="submit" className='btn btn-primary mt-3 w-full max-w-xs' value="save" /> <br />
 
                         </form>
 

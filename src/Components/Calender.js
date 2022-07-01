@@ -7,7 +7,6 @@ import TaskModal from './TaskModal';
 const Calender = () => {
     const [date, setDate] = useState(new Date());
     const [task, setTask] = useState(null);
-    console.log(date);
     return (
         <div>
             <div className='text-center flex justify-center'>
@@ -16,10 +15,10 @@ const Calender = () => {
                     selected={date}
                     onSelect={setDate} />
             </div>
-            <div className='text-center mt-14'>
-                <p>Selected date:{format(date, "PP")}</p>
+            <div className='text-center my-5'>
+                <p className='text-lg font-medium'>Selected date:{format(date, "PP")}</p>
                 {/* <button className="btn btn-sm">Create Task</button> */}
-                <label htmlFor="task-modal" onClick={setTask} className="btn btn-sm">Create Task</label>
+                <label htmlFor="task-modal" onClick={setTask} className="btn btn-sm mt-5">Create Task</label>
                 {task && <TaskModal
                     setTask={setTask}
                     date={date}></TaskModal>}
